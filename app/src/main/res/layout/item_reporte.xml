@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_content"
+    android:background="@drawable/roundedpost"
+    android:elevation="5dp"
+    android:stateListAnimator="@null">
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/item_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        mapbox:mapid="jbeleno.lfeaogoe"
+        mapbox:accessToken="pk.eyJ1IjoiamJlbGVubyIsImEiOiJRbGhXRkhVIn0.h2cvX1dQMRnGDT3OBppm3A"/>
+
+    <TextView
+        android:id="@+id/item_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/negro"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/gris3"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gris4"
+        android:padding="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/item_distancia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gris"
+            android:layout_weight="50"
+            android:gravity="start"
+            android:textAlignment="gravity"/>
+
+        <TextView
+            android:id="@+id/item_tiempo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/gris"
+            android:layout_weight="50"
+            android:gravity="end"
+            android:textAlignment="gravity"/>
+    </LinearLayout>
+</LinearLayout>

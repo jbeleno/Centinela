@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gris2"
+    android:id="@+id/content_reportar">
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+        <com.mapbox.mapboxsdk.views.MapView
+            android:id="@+id/report_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            mapbox:mapid="jbeleno.lfeaogoe"
+            mapbox:accessToken="pk.eyJ1IjoiamJlbGVubyIsImEiOiJRbGhXRkhVIn0.h2cvX1dQMRnGDT3OBppm3A"/>
+
+        <Spinner
+            android:id="@+id/report_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="0dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"
+            android:textColor="@color/negro"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="@string/textReportar"
+            android:id="@+id/report_texto"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded"
+            android:padding="5dp"
+            android:textColor="@color/negro"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btncuadrado"
+            android:text="@string/btnReportar"
+            android:id="@+id/btnReportar"
+            android:textColor="@color/blanco"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

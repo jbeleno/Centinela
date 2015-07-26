@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/ColorActionBar</item>
+        <item name="android:textColorPrimary">@color/blanco</item>
+        <item name="colorPrimary">@color/azul</item>
+    </style>
+
+    <style name="ColorActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/azul</item>
+        <item name="titleTextStyle">@style/EstiloTexto</item>
+    </style>
+
+    <style name="EstiloTexto" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+</resources>

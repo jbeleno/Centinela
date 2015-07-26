@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Centinela</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="reportar">Reportar</string>
+    <string name="reportes">Reportes</string>
+    <string name="textReportar">Hay (una pelea, un grupo de personas sospechosas, etc)... está sucediendo en cercanías de ... los individuos visten ...</string>
+    <string name="btnReportar">REPORTAR</string>
+    <string name="errorJSON">Error en el formato JSON.</string>
+    <string name="error">¡Ups! Houston tenemos un problema con tu conexión a internet.</string>
+    <string name="errorGPS">Por favor activa el GPS para que se puedan listar mejor las publicaciones según la cercanía del suceso.</string>
+    <string name="todoBien">Se ha reportado correctamente el evento.</string>
+    <string name="goodSettings">Se han guardado tus configuraciones.</string>
+    <string name="registroHecho">Se ha registrado con éxito el dispositivo.</string>
+    <string name="rango">RANGO: </string>
+    <string name="notificaciones">NOTIFICACIONES: </string>
+    <string name="configurar">CONFIGURAR</string>
+    <string name="configInfo">Con esta información solo te llegaran las notificaciones de los eventos ocurridos dentro de la distancia especificada respecto a tu ubicación</string>
+    <string-array name="tipos">
+        <item>Hurto</item>
+        <item>Accidente</item>
+        <item>Homicidio</item>
+        <item>Suicidio</item>
+        <item>Sospecha</item>
+        <item>Riña</item>
+        <item>Otros</item>
+    </string-array>
+    <string name="title_activity_configurar">Configurar</string>
+</resources>
